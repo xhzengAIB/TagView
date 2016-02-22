@@ -58,20 +58,20 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "../../XHTagView/Resources/tag_background_left@2x.png"
-  install_resource "../../XHTagView/Resources/tag_background_left@3x.png"
-  install_resource "../../XHTagView/Resources/tag_background_right@2x.png"
-  install_resource "../../XHTagView/Resources/tag_background_right@3x.png"
-  install_resource "../../XHTagView/Resources/tag_center@2x.png"
-  install_resource "../../XHTagView/Resources/tag_center@3x.png"
+  install_resource "../../XHTagView/Resources/tag-background-left@2x.png"
+  install_resource "../../XHTagView/Resources/tag-background-left@3x.png"
+  install_resource "../../XHTagView/Resources/tag-background-right@2x.png"
+  install_resource "../../XHTagView/Resources/tag-background-right@3x.png"
+  install_resource "../../XHTagView/Resources/tag-center@2x.png"
+  install_resource "../../XHTagView/Resources/tag-center@3x.png"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "../../XHTagView/Resources/tag_background_left@2x.png"
-  install_resource "../../XHTagView/Resources/tag_background_left@3x.png"
-  install_resource "../../XHTagView/Resources/tag_background_right@2x.png"
-  install_resource "../../XHTagView/Resources/tag_background_right@3x.png"
-  install_resource "../../XHTagView/Resources/tag_center@2x.png"
-  install_resource "../../XHTagView/Resources/tag_center@3x.png"
+  install_resource "../../XHTagView/Resources/tag-background-left@2x.png"
+  install_resource "../../XHTagView/Resources/tag-background-left@3x.png"
+  install_resource "../../XHTagView/Resources/tag-background-right@2x.png"
+  install_resource "../../XHTagView/Resources/tag-background-right@3x.png"
+  install_resource "../../XHTagView/Resources/tag-center@2x.png"
+  install_resource "../../XHTagView/Resources/tag-center@3x.png"
 fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

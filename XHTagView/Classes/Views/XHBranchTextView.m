@@ -95,7 +95,7 @@
 }
 
 - (void)setupArrowImageWithDirection:(XHBranchLayerDirection)direction {
-    self.arrowImageView.image = [[UIImage imageNamed:(direction == XHBranchLayerDirectionRight ? @"tag_background_right" : @"tag_background_left")] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10) resizingMode:UIImageResizingModeStretch];
+    self.arrowImageView.image = [[UIImage imageNamed:(direction == XHBranchLayerDirectionRight ? @"tag-background-right" : @"tag-background-left")] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10) resizingMode:UIImageResizingModeStretch];
 }
 
 @end

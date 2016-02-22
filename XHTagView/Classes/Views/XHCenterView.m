@@ -61,7 +61,7 @@
 - (UIButton *)button {
     if (!_button) {
         _button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_button setBackgroundImage:[UIImage imageNamed:@"tag_center"] forState:UIControlStateNormal];
+        [_button setBackgroundImage:[UIImage imageNamed:@"tag-center"] forState:UIControlStateNormal];
     }
     return _button;
 }

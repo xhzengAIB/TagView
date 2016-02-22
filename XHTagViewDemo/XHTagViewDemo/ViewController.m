@@ -26,10 +26,17 @@
     
     [self performSelector:@selector(showTagView) withObject:nil afterDelay:0];
     
+    [self performSelector:@selector(dismissTagView) withObject:nil afterDelay:5];
+    
 }
 
 - (void)showTagView {
     [self.tagView showInPoint:CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds))];
+}
+
+- (void)dismissTagView {
+    [self.tagView dismiss];
+    self.tagView = nil;
 }
 
 - (void)didReceiveMemoryWarning {

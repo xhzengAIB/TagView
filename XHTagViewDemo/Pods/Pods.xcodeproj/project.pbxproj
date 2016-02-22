@@ -39,26 +39,24 @@
 
 /* Begin PBXFileReference section */
 		043E10622BF7B0578B79893E63627BC4 /* Pods-XHTagViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XHTagViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		15E321AE4C07048F76A67F78BE75D402 /* tag-background-right@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag-background-right@2x.png"; sourceTree = "<group>"; };
 		1AFD901470651BE4A01B1F16E5A16FD6 /* XHTagView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHTagView.h; sourceTree = "<group>"; };
 		1E3EAD7AE8563F051DE953501CDD9D87 /* XHCenterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHCenterView.h; sourceTree = "<group>"; };
 		1E444D5ABB748136278D83A995F6D686 /* Pods-XHTagViewDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XHTagViewDemo-frameworks.sh"; sourceTree = "<group>"; };
 		2483AFD2DE40C600B21214FC2B8EB38E /* Pods-XHTagViewDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XHTagViewDemo-resources.sh"; sourceTree = "<group>"; };
-		253E5706C3729EB143345CF4C2555339 /* tag_background_right@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag_background_right@3x.png"; sourceTree = "<group>"; };
 		28990FE0386D846E135099E74332EB20 /* XHBranchPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHBranchPoint.h; sourceTree = "<group>"; };
 		2EF65D58F26E83CC142F95CD5FABEA32 /* XHFocusLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHFocusLayer.m; sourceTree = "<group>"; };
 		3191542BE5C0C2C33CEE7F429CB23939 /* libPods-XHTagViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XHTagViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32655558443C942D3737B6F39036E95E /* XHTagView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHTagView.m; sourceTree = "<group>"; };
 		3D5648408D8E7CD38C5BC1DCB70712E4 /* XHBranchLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHBranchLayer.h; sourceTree = "<group>"; };
-		3E79F83FBDE8B78B9EFB73DA8CC3751B /* tag_background_right@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag_background_right@2x.png"; sourceTree = "<group>"; };
 		54166236D1BF933A38EAB64302624195 /* XHBranchTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHBranchTextView.m; sourceTree = "<group>"; };
-		59E6C8D5CBFECEC0603F60026775DCC6 /* tag_center@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag_center@2x.png"; sourceTree = "<group>"; };
+		5FE6549CE15F27E236E35FF46CBCE457 /* tag-center@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag-center@3x.png"; sourceTree = "<group>"; };
 		65A555A8BD8FA5EA9632637215FA2195 /* Pods-XHTagViewDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XHTagViewDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		709C3E080A8BDEA8710F2C9DD63A50CC /* Pods-XHTagViewDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XHTagViewDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7A23366509DEE4E8C75CA4CD8C41118B /* XHTagView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XHTagView-prefix.pch"; sourceTree = "<group>"; };
-		8721C572C55AC17FFC6293C83DCCA7C0 /* tag_center@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag_center@3x.png"; sourceTree = "<group>"; };
+		83D700B4F586ECAF7E9D82725D8C1078 /* tag-background-right@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag-background-right@3x.png"; sourceTree = "<group>"; };
 		884ADAEE48F0DD66B0A32230217BE3CA /* XHTagHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHTagHeader.h; sourceTree = "<group>"; };
-		892C16BB386F07C868775E9DA8969400 /* tag_background_left@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag_background_left@3x.png"; sourceTree = "<group>"; };
 		8B14BF15945E0215C43F36D35757A6BC /* libXHTagView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXHTagView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0C34D9CC79908345059E05DBB950BB /* XHTagView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XHTagView.xcconfig; sourceTree = "<group>"; };
 		8DF0BB251DFE8A6FBC015CC614E7DBE6 /* XHBranchTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHBranchTextView.h; sourceTree = "<group>"; };
@@ -69,8 +67,10 @@
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BE352EA278DFC0EBEE2EA324C8D1FDE7 /* Pods-XHTagViewDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XHTagViewDemo-dummy.m"; sourceTree = "<group>"; };
 		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CA2985879433CA85B1D85D0F49C3C29F /* tag-background-left@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag-background-left@3x.png"; sourceTree = "<group>"; };
 		DA1F25F26FAEF0FFA10FBAEA048E1DB7 /* XHTagView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XHTagView-dummy.m"; sourceTree = "<group>"; };
-		E929D010765E3DB0332C2E2C76C9DD22 /* tag_background_left@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag_background_left@2x.png"; sourceTree = "<group>"; };
+		E6A6B984F45A6D841998CBF8C9168AAD /* tag-background-left@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag-background-left@2x.png"; sourceTree = "<group>"; };
+		E8451B29348BC3CC4504E8E41D11181C /* tag-center@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag-center@2x.png"; sourceTree = "<group>"; };
 		FCE82B46159B2EEA4BBC587E66E3E1D2 /* XHFocusLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHFocusLayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +130,19 @@
 				2EF65D58F26E83CC142F95CD5FABEA32 /* XHFocusLayer.m */,
 			);
 			path = Layers;
+			sourceTree = "<group>";
+		};
+		3B0138F845A78A7E5F3C219DEB9A2F53 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6A6B984F45A6D841998CBF8C9168AAD /* tag-background-left@2x.png */,
+				CA2985879433CA85B1D85D0F49C3C29F /* tag-background-left@3x.png */,
+				15E321AE4C07048F76A67F78BE75D402 /* tag-background-right@2x.png */,
+				83D700B4F586ECAF7E9D82725D8C1078 /* tag-background-right@3x.png */,
+				E8451B29348BC3CC4504E8E41D11181C /* tag-center@2x.png */,
+				5FE6549CE15F27E236E35FF46CBCE457 /* tag-center@3x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		3F392654501636843708FEC78200BF54 /* Development Pods */ = {
@@ -207,7 +220,7 @@
 		90F95AC6E7B8B6B01C9D36F457FF67A2 /* XHTagView */ = {
 			isa = PBXGroup;
 			children = (
-				DA53B2CE3326C225A99A1650A3E80553 /* Resources */,
+				3B0138F845A78A7E5F3C219DEB9A2F53 /* Resources */,
 			);
 			path = XHTagView;
 			sourceTree = "<group>";
@@ -248,19 +261,6 @@
 			);
 			name = "Support Files";
 			path = "XHTagViewDemo/Pods/Target Support Files/XHTagView";
-			sourceTree = "<group>";
-		};
-		DA53B2CE3326C225A99A1650A3E80553 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E929D010765E3DB0332C2E2C76C9DD22 /* tag_background_left@2x.png */,
-				892C16BB386F07C868775E9DA8969400 /* tag_background_left@3x.png */,
-				3E79F83FBDE8B78B9EFB73DA8CC3751B /* tag_background_right@2x.png */,
-				253E5706C3729EB143345CF4C2555339 /* tag_background_right@3x.png */,
-				59E6C8D5CBFECEC0603F60026775DCC6 /* tag_center@2x.png */,
-				8721C572C55AC17FFC6293C83DCCA7C0 /* tag_center@3x.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		DD84F62D0935C96BA28CE37708C9989C /* XHTagView */ = {
