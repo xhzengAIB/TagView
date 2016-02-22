@@ -25,7 +25,7 @@ typedef void(^XHBranchLayerAnimationCompletion)(BOOL finished, XHBranchLayer *br
 
 @property (nonatomic, assign) CGFloat radius;
 @property (nonatomic, assign) CGFloat toValue;
-@property (nonatomic, assign) NSTimeInterval pathDuration;
+@property (nonatomic, assign) NSTimeInterval animationDuration;
 
 - (void)animationDelay:(NSTimeInterval)delay
             completion:(XHBranchLayerAnimationCompletion)completion;
