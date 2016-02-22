@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import <XHTagView.h>
 
 @interface ViewController ()
+
+@property (nonatomic, strong) XHTagView *tagView;
 
 @end
 
@@ -16,7 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    self.tagView = [[XHTagView alloc] initWithFrame:CGRectMake(0, 100, 200, 200)];
+    [self.view addSubview:self.tagView];
+    
+    [self performSelector:@selector(showTagView) withObject:nil afterDelay:0];
+    
+}
+
+- (void)showTagView {
+//    [self.tagView showInPoint:CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds))];
 }
 
 - (void)didReceiveMemoryWarning {
