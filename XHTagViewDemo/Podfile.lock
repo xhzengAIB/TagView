@@ -1,0 +1,14 @@
+PODS:
+  - XHTagView (1.0)
+
+DEPENDENCIES:
+  - XHTagView (from `../`)
+
+EXTERNAL SOURCES:
+  XHTagView:
+    :local: "../"
+
+SPEC CHECKSUMS:
+  XHTagView: 1df29bdf1b2116986909cdf2f2e4d64e91055ad6
+
+COCOAPODS: 0.39.0

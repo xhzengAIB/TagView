@@ -15,6 +15,7 @@
 		E47F285E1C7B1F2C00CBDE46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47F285C1C7B1F2C00CBDE46 /* LaunchScreen.storyboard */; };
 		E47F28691C7B1F2C00CBDE46 /* XHTagViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F28681C7B1F2C00CBDE46 /* XHTagViewDemoTests.m */; };
 		E47F28741C7B1F2C00CBDE46 /* XHTagViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F28731C7B1F2C00CBDE46 /* XHTagViewDemoUITests.m */; };
+		E755AA483E18E649DD7D240B /* libPods-XHTagViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD80510F1F6D4CFA347093C3 /* libPods-XHTagViewDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6194C8888B631B3C63D82E59 /* Pods-XHTagViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHTagViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XHTagViewDemo/Pods-XHTagViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		88623D0CED13678614629647 /* Pods-XHTagViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHTagViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XHTagViewDemo/Pods-XHTagViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BD80510F1F6D4CFA347093C3 /* libPods-XHTagViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XHTagViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47F284B1C7B1F2C00CBDE46 /* XHTagViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHTagViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47F284F1C7B1F2C00CBDE46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E47F28511C7B1F2C00CBDE46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E755AA483E18E649DD7D240B /* libPods-XHTagViewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0202C3A482F87AE98616EE51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88623D0CED13678614629647 /* Pods-XHTagViewDemo.debug.xcconfig */,
+				6194C8888B631B3C63D82E59 /* Pods-XHTagViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		472D10E8BE78E90C606D0D50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD80510F1F6D4CFA347093C3 /* libPods-XHTagViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E47F28421C7B1F2B00CBDE46 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				E47F28671C7B1F2C00CBDE46 /* XHTagViewDemoTests */,
 				E47F28721C7B1F2C00CBDE46 /* XHTagViewDemoUITests */,
 				E47F284C1C7B1F2C00CBDE46 /* Products */,
+				0202C3A482F87AE98616EE51 /* Pods */,
+				472D10E8BE78E90C606D0D50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E47F28781C7B1F2C00CBDE46 /* Build configuration list for PBXNativeTarget "XHTagViewDemo" */;
 			buildPhases = (
+				BF7A9144A705152616B714DD /* Check Pods Manifest.lock */,
 				E47F28471C7B1F2C00CBDE46 /* Sources */,
 				E47F28481C7B1F2C00CBDE46 /* Frameworks */,
 				E47F28491C7B1F2C00CBDE46 /* Resources */,
+				485321DA73EE189B729D24C4 /* Embed Pods Frameworks */,
+				4972E33FF17AF54FB8097F17 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		485321DA73EE189B729D24C4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XHTagViewDemo/Pods-XHTagViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4972E33FF17AF54FB8097F17 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XHTagViewDemo/Pods-XHTagViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF7A9144A705152616B714DD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E47F28471C7B1F2C00CBDE46 /* Sources */ = {
@@ -411,6 +486,7 @@
 		};
 		E47F28791C7B1F2C00CBDE46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88623D0CED13678614629647 /* Pods-XHTagViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XHTagViewDemo/Info.plist;
@@ -422,6 +498,7 @@
 		};
 		E47F287A1C7B1F2C00CBDE46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6194C8888B631B3C63D82E59 /* Pods-XHTagViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XHTagViewDemo/Info.plist;
@@ -498,6 +575,7 @@
 				E47F287A1C7B1F2C00CBDE46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E47F287B1C7B1F2C00CBDE46 /* Build configuration list for PBXNativeTarget "XHTagViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +584,7 @@
 				E47F287D1C7B1F2C00CBDE46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E47F287E1C7B1F2C00CBDE46 /* Build configuration list for PBXNativeTarget "XHTagViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +593,7 @@
 				E47F28801C7B1F2C00CBDE46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
