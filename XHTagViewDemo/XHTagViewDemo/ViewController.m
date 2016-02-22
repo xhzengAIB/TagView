@@ -29,7 +29,7 @@
 }
 
 - (void)showTagView {
-//    [self.tagView showInPoint:CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds))];
+    [self.tagView showInPoint:CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds))];
 }
 
 - (void)didReceiveMemoryWarning {
