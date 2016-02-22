@@ -42,7 +42,7 @@
 /**
  *  圆形脉冲的半径
  *
- *	默认值 12pt.
+ *	默认值 15pt.
  */
 @property (nonatomic, assign) CGFloat radius;
 
