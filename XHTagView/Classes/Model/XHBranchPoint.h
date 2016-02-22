@@ -13,11 +13,33 @@
 
 @interface XHBranchPoint : NSObject
 
-@property (nonatomic, assign) CGPoint startPoint;
-@property (nonatomic, assign) CGPoint midPoint;
-@property (nonatomic, assign) CGPoint endPoint;
-
+/**
+ *  分支在动画中的朝向
+ *
+ *	默认是右边
+ */
 @property (nonatomic, assign) XHBranchLayerDirection direction;
+
+/**
+ *  分支在动画的起始位置
+ *
+ *	默认值 CGPointZero
+ */
+@property (nonatomic, assign) CGPoint startPoint;
+
+/**
+ *  分支在动画的中间位置
+ *
+ *	默认值 CGPointZero
+ */
+@property (nonatomic, assign) CGPoint midPoint;
+
+/**
+ *  分支在动画的结束位置
+ *
+ *	默认值 CGPointZero
+ */
+@property (nonatomic, assign) CGPoint endPoint;
 
 + (instancetype)initlizerStartPoint:(CGPoint)startPoint
                            midPoint:(CGPoint)midPoint
