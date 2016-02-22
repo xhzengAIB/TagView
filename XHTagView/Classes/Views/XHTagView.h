@@ -10,8 +10,16 @@
 
 @interface XHTagView : UIView
 
+/**
+ *  分支动画末梢圆圈的半径
+ *
+ *  默认值 3.0
+ */
 @property (nonatomic, assign) CGFloat radius;
 
+/**
+ *  获取标签视图是否显示，仅仅用于获取，不能赋值
+ */
 @property (nonatomic, assign, readonly) BOOL showing;
 
 - (void)showInPoint:(CGPoint)point;
