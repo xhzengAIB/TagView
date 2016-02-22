@@ -11,6 +11,9 @@
 
 @interface XHBranchTextView : UIView
 
+/**
+ *  分支提示文本
+ */
 @property (nonatomic, copy) NSString *branchText;
 
 - (void)showInPoint:(CGPoint)point direction:(XHBranchLayerDirection)direction;
