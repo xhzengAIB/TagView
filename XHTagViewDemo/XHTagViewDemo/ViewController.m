@@ -11,7 +11,7 @@
 
 @interface ViewController ()
 
-@property (nonatomic, strong) XHTagView *tagView;
+@property (nonatomic, weak) IBOutlet XHTagView *tagView;
 
 @end
 
@@ -21,13 +21,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
     
-    self.tagView = [[XHTagView alloc] initWithFrame:CGRectMake(0, 100, 200, 200)];
-    [self.view addSubview:self.tagView];
-    
     [self performSelector:@selector(showTagView) withObject:nil afterDelay:0];
-    
-    [self performSelector:@selector(dismissTagView) withObject:nil afterDelay:5];
-    
 }
 
 - (void)showTagView {

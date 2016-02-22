@@ -20,10 +20,18 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self.layer addSublayer:self.focusLayer];
-        [self addSubview:self.button];
+        [self setup];
     }
     return self;
+}
+
+- (void)awakeFromNib {
+    [self setup];
+}
+
+- (void)setup {
+    [self.layer addSublayer:self.focusLayer];
+    [self addSubview:self.button];
 }
 
 - (void)layoutSubviews {

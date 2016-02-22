@@ -41,20 +41,27 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.radius = 3;
-        
-        [self.layer addSublayer:self.topBranchLayer];
-        [self.layer addSublayer:self.midBranchLayer];
-        [self.layer addSublayer:self.bottomBranchLayer];
-        
-        [self addSubview:self.topBranchTextView];
-        [self addSubview:self.midBranchTextView];
-        [self addSubview:self.bottomBranchTextView];
-        
-        [self addSubview:self.centerView];
+        [self setup];
     }
-    
     return self;
+}
+
+- (void)awakeFromNib {
+    [self setup];
+}
+
+- (void)setup {
+    self.radius = 3;
+    
+    [self.layer addSublayer:self.topBranchLayer];
+    [self.layer addSublayer:self.midBranchLayer];
+    [self.layer addSublayer:self.bottomBranchLayer];
+    
+    [self addSubview:self.topBranchTextView];
+    [self addSubview:self.midBranchTextView];
+    [self addSubview:self.bottomBranchTextView];
+    
+    [self addSubview:self.centerView];
 }
 
 - (void)showInPoint:(CGPoint)point {

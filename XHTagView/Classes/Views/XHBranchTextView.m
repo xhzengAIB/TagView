@@ -20,12 +20,20 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self addSubview:self.arrowImageView];
-        [self addSubview:self.textLabel];
-        
-        [self dismiss];
+        [self setup];
     }
     return self;
+}
+
+- (void)awakeFromNib {
+    [self setup];
+}
+
+- (void)setup {
+    [self addSubview:self.arrowImageView];
+    [self addSubview:self.textLabel];
+    
+    [self dismiss];
 }
 
 - (void)showInPoint:(CGPoint)point direction:(XHBranchLayerDirection)direction {
