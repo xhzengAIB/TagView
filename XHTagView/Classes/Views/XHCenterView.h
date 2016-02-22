@@ -10,6 +10,9 @@
 
 @interface XHCenterView : UIView
 
+/**
+ *  中心红点的按钮
+ */
 @property (nonatomic, strong) UIButton *button;
 
 - (void)show;
