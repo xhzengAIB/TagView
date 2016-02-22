@@ -60,7 +60,7 @@
  */
 @property (nonatomic, assign) NSInteger focusLayerNumber;
 
-- (void)startAnimating;
+- (void)startAnimation;
 - (void)stopAnimation;
 
 @end

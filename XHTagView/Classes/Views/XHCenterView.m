@@ -40,7 +40,7 @@
 }
 
 - (void)startAnimation {
-    [self.focusLayer startAnimating];
+    [self.focusLayer startAnimation];
 }
 
 - (void)stopAnimation {

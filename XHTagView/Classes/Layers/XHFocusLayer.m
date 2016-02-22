@@ -50,7 +50,7 @@
     [self addSublayer:self.targetLayer];
 }
 
-- (void)startAnimating {
+- (void)startAnimation {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
         
         if (!self.animationGroup) {
