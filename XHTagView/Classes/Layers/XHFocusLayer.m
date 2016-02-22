@@ -93,13 +93,11 @@
 }
 
 - (void)setBackgroundColor:(CGColorRef)backgroundColor {
-    
     [super setBackgroundColor:backgroundColor];
     self.targetLayer.backgroundColor = backgroundColor;
 }
 
 - (void)setRadius:(CGFloat)radius {
-    
     _radius = radius;
     
     CGFloat diameter = self.radius * 2;
@@ -109,14 +107,12 @@
 }
 
 - (void)setFocusLayerNumber:(NSInteger)focusLayerNumber {
-    
     _focusLayerNumber = focusLayerNumber;
     self.instanceCount = focusLayerNumber;
     self.instanceDelay = (self.animationDuration) / focusLayerNumber;
 }
 
 - (void)setAnimationDuration:(NSTimeInterval)animationDuration {
-    
     _animationDuration = animationDuration;
     self.animationGroup.duration = animationDuration;
     for (CAAnimation *anAnimation in self.animationGroup.animations) {
