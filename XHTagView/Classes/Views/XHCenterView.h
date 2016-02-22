@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XHCenterButton : UIView
+@interface XHCenterView : UIView
 
 @property (nonatomic, strong) UIButton *button;
 
