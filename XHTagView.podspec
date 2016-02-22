@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "TagView"
+  s.name         = "XHTagView"
   s.version      = "1.0"
   s.summary      = "High efficiency Tag components."
   s.homepage     = "https://github.com/xhzengAIB/TagView"
