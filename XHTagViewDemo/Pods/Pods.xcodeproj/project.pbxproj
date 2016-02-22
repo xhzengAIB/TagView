@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39D981D67A66D2F58370527BD522E6DB /* XHCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F2B146B3A4217B4D75528EB90C163B /* XHCenterView.m */; };
+		16E83D270A72810DB45D6B0DED7DEA23 /* XHCenterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3EAD7AE8563F051DE953501CDD9D87 /* XHCenterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39D981D67A66D2F58370527BD522E6DB /* XHCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 985DAB0BFB63207D6125BC86FE40DF8F /* XHCenterView.m */; };
+		46653D30A92B881FF4C853DF89141886 /* XHBranchPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 28990FE0386D846E135099E74332EB20 /* XHBranchPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C2B92036E3BF2F99DA8F1A207BE881F /* Pods-XHTagViewDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE352EA278DFC0EBEE2EA324C8D1FDE7 /* Pods-XHTagViewDemo-dummy.m */; };
-		4CCD784E638E6241ED3D7E562B352926 /* XHFocusLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D16A70B1B64E81052BACC0F6633F0D33 /* XHFocusLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CD03CFF76EA37A47001BFFC92781281 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
-		5CCCD6F33A6E6FF2B2305A62B7FBB43D /* XHTagView.h in Headers */ = {isa = PBXBuildFile; fileRef = A598A59595AB1893BDD203E2058EC676 /* XHTagView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6094C234DA03FDE8516DEFCD9414F58F /* XHFocusLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EED4B9947FC228D7ABE18996879371 /* XHFocusLayer.m */; };
-		7011302C7E0524ED50B51B62E6DAE9FA /* XHBranchLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3439BB9DBA3D1A11A8B0F6FBDCE2A191 /* XHBranchLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7487DEEC6E8714EC05A703D535BED298 /* XHBranchTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 610D1598B9AF199CBF6D61230DA30B49 /* XHBranchTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E0503668331CBADDE54967CBE33CE14 /* XHCenterView.h in Headers */ = {isa = PBXBuildFile; fileRef = DA50174B2110C505544D80F0662FE97D /* XHCenterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A69C1ECB0CF712BD8269230A2053FEC4 /* XHBranchPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 197750B6095B76020A05AD11B6562A6F /* XHBranchPoint.m */; };
-		B7D8CE48AB96C2AADA21B787BDCF1064 /* XHTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AAD4026787004407C74A9D526BD924 /* XHTagView.m */; };
-		C6E171F92D5B9352EC3A7B39C9E8D758 /* XHBranchTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F39FA748449CABBFB7341D13256096 /* XHBranchTextView.m */; };
+		6094C234DA03FDE8516DEFCD9414F58F /* XHFocusLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF65D58F26E83CC142F95CD5FABEA32 /* XHFocusLayer.m */; };
+		71168E2FAB352CE1E6FBE2120FB01D53 /* XHFocusLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FCE82B46159B2EEA4BBC587E66E3E1D2 /* XHFocusLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A69C1ECB0CF712BD8269230A2053FEC4 /* XHBranchPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E70DD18498B23AE5E8F8B5FE3AB713B /* XHBranchPoint.m */; };
+		B0D5E609A2D5C9E4F494C2130B20BE67 /* XHTagHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 884ADAEE48F0DD66B0A32230217BE3CA /* XHTagHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4DE555FB6113F9B51F10CFBBA01831D /* XHTagView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD901470651BE4A01B1F16E5A16FD6 /* XHTagView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7D8CE48AB96C2AADA21B787BDCF1064 /* XHTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32655558443C942D3737B6F39036E95E /* XHTagView.m */; };
+		C6E171F92D5B9352EC3A7B39C9E8D758 /* XHBranchTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54166236D1BF933A38EAB64302624195 /* XHBranchTextView.m */; };
 		D31DDA66849103091860F87FA2C44915 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
 		DA080FC8879DE59D8C4150B5B7AB3A33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		E3B10C227F1ACCA02B0CD666BDC61A97 /* XHBranchLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D5648408D8E7CD38C5BC1DCB70712E4 /* XHBranchLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDA780E0A12D568967642ABC8EBE73A4 /* XHTagView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F25F26FAEF0FFA10FBAEA048E1DB7 /* XHTagView-dummy.m */; };
-		F410DEAF8695649318F1141F621DE1B1 /* XHBranchPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = C55AD9FE430446695E59244803D1A3B9 /* XHBranchPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F778DE189A93ACC0E6745EE356705621 /* XHBranchLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A834A26B38F2FED7DF3A6AA110F116D4 /* XHBranchLayer.m */; };
+		F778DE189A93ACC0E6745EE356705621 /* XHBranchLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B38DF4B33BCC740D7F3F0A09F0CFEB35 /* XHBranchLayer.m */; };
+		F8966A257611B5B0C97FEC72BBFDA1B8 /* XHBranchTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF0BB251DFE8A6FBC015CC614E7DBE6 /* XHBranchTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,38 +39,39 @@
 
 /* Begin PBXFileReference section */
 		043E10622BF7B0578B79893E63627BC4 /* Pods-XHTagViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XHTagViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		197750B6095B76020A05AD11B6562A6F /* XHBranchPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHBranchPoint.m; sourceTree = "<group>"; };
+		1AFD901470651BE4A01B1F16E5A16FD6 /* XHTagView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHTagView.h; sourceTree = "<group>"; };
+		1E3EAD7AE8563F051DE953501CDD9D87 /* XHCenterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHCenterView.h; sourceTree = "<group>"; };
 		1E444D5ABB748136278D83A995F6D686 /* Pods-XHTagViewDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XHTagViewDemo-frameworks.sh"; sourceTree = "<group>"; };
 		2483AFD2DE40C600B21214FC2B8EB38E /* Pods-XHTagViewDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XHTagViewDemo-resources.sh"; sourceTree = "<group>"; };
 		253E5706C3729EB143345CF4C2555339 /* tag_background_right@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag_background_right@3x.png"; sourceTree = "<group>"; };
-		26F39FA748449CABBFB7341D13256096 /* XHBranchTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHBranchTextView.m; sourceTree = "<group>"; };
+		28990FE0386D846E135099E74332EB20 /* XHBranchPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHBranchPoint.h; sourceTree = "<group>"; };
+		2EF65D58F26E83CC142F95CD5FABEA32 /* XHFocusLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHFocusLayer.m; sourceTree = "<group>"; };
 		3191542BE5C0C2C33CEE7F429CB23939 /* libPods-XHTagViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XHTagViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3439BB9DBA3D1A11A8B0F6FBDCE2A191 /* XHBranchLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHBranchLayer.h; sourceTree = "<group>"; };
+		32655558443C942D3737B6F39036E95E /* XHTagView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHTagView.m; sourceTree = "<group>"; };
+		3D5648408D8E7CD38C5BC1DCB70712E4 /* XHBranchLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHBranchLayer.h; sourceTree = "<group>"; };
 		3E79F83FBDE8B78B9EFB73DA8CC3751B /* tag_background_right@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag_background_right@2x.png"; sourceTree = "<group>"; };
-		40AAD4026787004407C74A9D526BD924 /* XHTagView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHTagView.m; sourceTree = "<group>"; };
+		54166236D1BF933A38EAB64302624195 /* XHBranchTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHBranchTextView.m; sourceTree = "<group>"; };
 		59E6C8D5CBFECEC0603F60026775DCC6 /* tag_center@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag_center@2x.png"; sourceTree = "<group>"; };
-		610D1598B9AF199CBF6D61230DA30B49 /* XHBranchTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHBranchTextView.h; sourceTree = "<group>"; };
 		65A555A8BD8FA5EA9632637215FA2195 /* Pods-XHTagViewDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XHTagViewDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		709C3E080A8BDEA8710F2C9DD63A50CC /* Pods-XHTagViewDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XHTagViewDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7A23366509DEE4E8C75CA4CD8C41118B /* XHTagView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XHTagView-prefix.pch"; sourceTree = "<group>"; };
 		8721C572C55AC17FFC6293C83DCCA7C0 /* tag_center@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag_center@3x.png"; sourceTree = "<group>"; };
+		884ADAEE48F0DD66B0A32230217BE3CA /* XHTagHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHTagHeader.h; sourceTree = "<group>"; };
 		892C16BB386F07C868775E9DA8969400 /* tag_background_left@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag_background_left@3x.png"; sourceTree = "<group>"; };
 		8B14BF15945E0215C43F36D35757A6BC /* libXHTagView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXHTagView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0C34D9CC79908345059E05DBB950BB /* XHTagView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XHTagView.xcconfig; sourceTree = "<group>"; };
-		94EED4B9947FC228D7ABE18996879371 /* XHFocusLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHFocusLayer.m; sourceTree = "<group>"; };
-		A598A59595AB1893BDD203E2058EC676 /* XHTagView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHTagView.h; sourceTree = "<group>"; };
-		A834A26B38F2FED7DF3A6AA110F116D4 /* XHBranchLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHBranchLayer.m; sourceTree = "<group>"; };
+		8DF0BB251DFE8A6FBC015CC614E7DBE6 /* XHBranchTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHBranchTextView.h; sourceTree = "<group>"; };
+		985DAB0BFB63207D6125BC86FE40DF8F /* XHCenterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHCenterView.m; sourceTree = "<group>"; };
+		9E70DD18498B23AE5E8F8B5FE3AB713B /* XHBranchPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHBranchPoint.m; sourceTree = "<group>"; };
 		B2A7B3FBEE218ADC779A615F30080B70 /* Pods-XHTagViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XHTagViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B38DF4B33BCC740D7F3F0A09F0CFEB35 /* XHBranchLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHBranchLayer.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BE352EA278DFC0EBEE2EA324C8D1FDE7 /* Pods-XHTagViewDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XHTagViewDemo-dummy.m"; sourceTree = "<group>"; };
 		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C55AD9FE430446695E59244803D1A3B9 /* XHBranchPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHBranchPoint.h; sourceTree = "<group>"; };
-		D16A70B1B64E81052BACC0F6633F0D33 /* XHFocusLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHFocusLayer.h; sourceTree = "<group>"; };
-		D8F2B146B3A4217B4D75528EB90C163B /* XHCenterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XHCenterView.m; sourceTree = "<group>"; };
 		DA1F25F26FAEF0FFA10FBAEA048E1DB7 /* XHTagView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XHTagView-dummy.m"; sourceTree = "<group>"; };
-		DA50174B2110C505544D80F0662FE97D /* XHCenterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHCenterView.h; sourceTree = "<group>"; };
 		E929D010765E3DB0332C2E2C76C9DD22 /* tag_background_left@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "tag_background_left@2x.png"; sourceTree = "<group>"; };
+		FCE82B46159B2EEA4BBC587E66E3E1D2 /* XHFocusLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHFocusLayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +104,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		2B2E9A7886C43BB47D9A36A7B59C5168 /* XHTagView */ = {
+		28A3C7621E2AD496D3E24C4D2A13EB07 /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				5297F7C9FA8E7F6D5EAE5A63416EA810 /* Classes */,
+				884ADAEE48F0DD66B0A32230217BE3CA /* XHTagHeader.h */,
 			);
-			path = XHTagView;
+			path = Header;
 			sourceTree = "<group>";
 		};
 		338BB462567CE0EBD9FCBAB76E286F66 /* Products */ = {
@@ -117,6 +119,17 @@
 				8B14BF15945E0215C43F36D35757A6BC /* libXHTagView.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3A00786E6DD0622B4CFFE1A49FA0BA1D /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				3D5648408D8E7CD38C5BC1DCB70712E4 /* XHBranchLayer.h */,
+				B38DF4B33BCC740D7F3F0A09F0CFEB35 /* XHBranchLayer.m */,
+				FCE82B46159B2EEA4BBC587E66E3E1D2 /* XHFocusLayer.h */,
+				2EF65D58F26E83CC142F95CD5FABEA32 /* XHFocusLayer.m */,
+			);
+			path = Layers;
 			sourceTree = "<group>";
 		};
 		3F392654501636843708FEC78200BF54 /* Development Pods */ = {
@@ -135,14 +148,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5297F7C9FA8E7F6D5EAE5A63416EA810 /* Classes */ = {
+		53590D1FC9DBFEA3241155469E70BBE0 /* XHTagView */ = {
 			isa = PBXGroup;
 			children = (
-				B3678F6A9F392F03C7D8F5C628D16614 /* Layers */,
-				832E91604593FBDE1560374A5A22C7D6 /* Model */,
-				9C5C3C14A269481BAFA76C200C8667A9 /* Views */,
+				AE94B4920FB2EEB507A1549E944679D3 /* Classes */,
 			);
-			path = Classes;
+			path = XHTagView;
+			sourceTree = "<group>";
+		};
+		6AA9670BB2FB4F09BE9870AFBA01CA43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28990FE0386D846E135099E74332EB20 /* XHBranchPoint.h */,
+				9E70DD18498B23AE5E8F8B5FE3AB713B /* XHBranchPoint.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77483729810E2640F39D2EA898111748 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DF0BB251DFE8A6FBC015CC614E7DBE6 /* XHBranchTextView.h */,
+				54166236D1BF933A38EAB64302624195 /* XHBranchTextView.m */,
+				1E3EAD7AE8563F051DE953501CDD9D87 /* XHCenterView.h */,
+				985DAB0BFB63207D6125BC86FE40DF8F /* XHCenterView.m */,
+				1AFD901470651BE4A01B1F16E5A16FD6 /* XHTagView.h */,
+				32655558443C942D3737B6F39036E95E /* XHTagView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -154,15 +187,6 @@
 				338BB462567CE0EBD9FCBAB76E286F66 /* Products */,
 				A72B527EDF0A71CED84AD44BA998042A /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		832E91604593FBDE1560374A5A22C7D6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C55AD9FE430446695E59244803D1A3B9 /* XHBranchPoint.h */,
-				197750B6095B76020A05AD11B6562A6F /* XHBranchPoint.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		86BE353740EAA39B96E53F89A3A2E458 /* Pods-XHTagViewDemo */ = {
@@ -188,19 +212,6 @@
 			path = XHTagView;
 			sourceTree = "<group>";
 		};
-		9C5C3C14A269481BAFA76C200C8667A9 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				610D1598B9AF199CBF6D61230DA30B49 /* XHBranchTextView.h */,
-				26F39FA748449CABBFB7341D13256096 /* XHBranchTextView.m */,
-				DA50174B2110C505544D80F0662FE97D /* XHCenterView.h */,
-				D8F2B146B3A4217B4D75528EB90C163B /* XHCenterView.m */,
-				A598A59595AB1893BDD203E2058EC676 /* XHTagView.h */,
-				40AAD4026787004407C74A9D526BD924 /* XHTagView.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		A72B527EDF0A71CED84AD44BA998042A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,15 +220,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B3678F6A9F392F03C7D8F5C628D16614 /* Layers */ = {
+		AE94B4920FB2EEB507A1549E944679D3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3439BB9DBA3D1A11A8B0F6FBDCE2A191 /* XHBranchLayer.h */,
-				A834A26B38F2FED7DF3A6AA110F116D4 /* XHBranchLayer.m */,
-				D16A70B1B64E81052BACC0F6633F0D33 /* XHFocusLayer.h */,
-				94EED4B9947FC228D7ABE18996879371 /* XHFocusLayer.m */,
+				28A3C7621E2AD496D3E24C4D2A13EB07 /* Header */,
+				3A00786E6DD0622B4CFFE1A49FA0BA1D /* Layers */,
+				6AA9670BB2FB4F09BE9870AFBA01CA43 /* Model */,
+				77483729810E2640F39D2EA898111748 /* Views */,
 			);
-			path = Layers;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		C268193E1786D9A284D38B44E3E8E499 /* Resources */ = {
@@ -257,7 +268,7 @@
 			children = (
 				C268193E1786D9A284D38B44E3E8E499 /* Resources */,
 				C9A4A0CAFAC58F23255A932E9638DAC2 /* Support Files */,
-				2B2E9A7886C43BB47D9A36A7B59C5168 /* XHTagView */,
+				53590D1FC9DBFEA3241155469E70BBE0 /* XHTagView */,
 			);
 			name = XHTagView;
 			path = ../..;
@@ -266,16 +277,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7AA9F9E7FA875461B259442484554350 /* Headers */ = {
+		9B93C7D4FD468746E2728017F5AEF1C2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7011302C7E0524ED50B51B62E6DAE9FA /* XHBranchLayer.h in Headers */,
-				F410DEAF8695649318F1141F621DE1B1 /* XHBranchPoint.h in Headers */,
-				7487DEEC6E8714EC05A703D535BED298 /* XHBranchTextView.h in Headers */,
-				9E0503668331CBADDE54967CBE33CE14 /* XHCenterView.h in Headers */,
-				4CCD784E638E6241ED3D7E562B352926 /* XHFocusLayer.h in Headers */,
-				5CCCD6F33A6E6FF2B2305A62B7FBB43D /* XHTagView.h in Headers */,
+				E3B10C227F1ACCA02B0CD666BDC61A97 /* XHBranchLayer.h in Headers */,
+				46653D30A92B881FF4C853DF89141886 /* XHBranchPoint.h in Headers */,
+				F8966A257611B5B0C97FEC72BBFDA1B8 /* XHBranchTextView.h in Headers */,
+				16E83D270A72810DB45D6B0DED7DEA23 /* XHCenterView.h in Headers */,
+				71168E2FAB352CE1E6FBE2120FB01D53 /* XHFocusLayer.h in Headers */,
+				B0D5E609A2D5C9E4F494C2130B20BE67 /* XHTagHeader.h in Headers */,
+				B4DE555FB6113F9B51F10CFBBA01831D /* XHTagView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +300,7 @@
 			buildPhases = (
 				CA5FC8D6A08E22DBB90A75D4DAF77CD3 /* Sources */,
 				5D4276F3358B6AAD8341C60D6DD69D64 /* Frameworks */,
-				7AA9F9E7FA875461B259442484554350 /* Headers */,
+				9B93C7D4FD468746E2728017F5AEF1C2 /* Headers */,
 			);
 			buildRules = (
 			);
