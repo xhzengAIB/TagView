@@ -62,6 +62,17 @@
     [self addSubview:self.bottomBranchTextView];
     
     [self addSubview:self.centerView];
+    
+    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGestureRecognizer:)];
+    [self addGestureRecognizer:panGestureRecognizer];
+}
+
+- (void)handlePanGestureRecognizer:(UIPanGestureRecognizer *)panGestureRecognizer {
+    CGPoint point = [panGestureRecognizer translationInView:panGestureRecognizer.view];
+    
+    self.center = CGPointMake(self.center.x + point.x, self.center.y + point.y);
+    
+    [panGestureRecognizer setTranslation:CGPointZero inView:panGestureRecognizer.view];
 }
 
 - (void)showInPoint:(CGPoint)point {
