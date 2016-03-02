@@ -12,7 +12,7 @@ High efficiency Tag components.
 
 # Requirements
 
-This library requires iOS 6.0+ and Xcode 7.0+.
+This library requires `iOS 6.0+` and `Xcode 7.0+`.
 
 # License
 
@@ -24,13 +24,13 @@ XHTagView is provided under the MIT license. See LICENSE file for details.
 
 # 安装
 
-1. 在 Podfile 中添加 pod 'XHTagView'。
-2. 执行 pod install 或 pod update。
-3. 导入 <XHTagView/XHTagView.h>。
+1. 在 `Podfile` 中添加 `pod 'XHTagView'`。
+2. 执行 `pod install` 或 `pod update`。
+3. 导入 `<XHTagView/XHTagView.h>`。
 
 # 要求
 
-该项目最低支持 iOS 6.0 和 Xcode 7.0。
+该项目最低支持 `iOS 6.0` 和 `Xcode 7.0`。
 
 # 许可证
 
