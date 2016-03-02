@@ -12,6 +12,8 @@
 
 @property (nonatomic, copy) XHBranchLayerAnimationCompletion completion;
 
+@property (nonatomic, strong) CABasicAnimation *animation;
+
 @end
 
 @implementation XHBranchLayer
@@ -26,7 +28,7 @@
 
 - (void)dealloc {
     self.completion = nil;
-    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+    [self cancelPrevious];
 }
 
 - (void)setup {
@@ -70,27 +72,33 @@
     self.path = path.CGPath;
 }
 
+- (void)cancelPrevious {
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+}
+
 - (void)animationDelay:(NSTimeInterval)delay
             completion:(XHBranchLayerAnimationCompletion)completion {
+    [self removeAllAnimations];
+    [self cancelPrevious];
     [self commitPath];
     
     self.completion = completion;
     
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    animation.delegate = self;
-    animation.beginTime = CACurrentMediaTime() + delay;
-    animation.fromValue = @(0);
-    animation.toValue = @(self.toValue);
-    animation.duration = self.animationDuration;
-    animation.fillMode = kCAFillModeForwards;
-    animation.removedOnCompletion = NO;
-    [self addAnimation:animation forKey:@"strokeEnd"];
+    self.animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    self.animation.delegate = self;
+    self.animation.beginTime = CACurrentMediaTime() + delay;
+    self.animation.fromValue = @(0);
+    self.animation.toValue = @(self.toValue);
+    self.animation.duration = self.animationDuration;
+    self.animation.fillMode = kCAFillModeForwards;
+    self.animation.removedOnCompletion = NO;
+    [self addAnimation:self.animation forKey:@"strokeEnd"];
     
     [self performSelector:@selector(setFillColor:) withObject:(id)[UIColor colorWithWhite:1.0 alpha:0.5].CGColor afterDelay:delay + self.animationDuration];
 }
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
-    if (self.completion) {
+    if (self.completion && anim == self.animation) {
         self.completion(flag, self);
     }
 }
