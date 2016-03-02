@@ -54,6 +54,7 @@
 
 - (void)setup {
     self.radius = 3;
+    self.panGestureOnTagViewed = YES;
     
     [self.layer addSublayer:self.topBranchLayer];
     [self.layer addSublayer:self.midBranchLayer];
@@ -288,8 +289,8 @@
 }
 
 - (UIPanGestureRecognizer *)panGestureRecognizer {
-    if (!_panGestureOnTagViewed) {
-        _panGestureOnTagViewed = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGestureRecognizer:)];
+    if (!_panGestureRecognizer) {
+        _panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGestureRecognizer:)];
     }
     return _panGestureRecognizer;
 }
