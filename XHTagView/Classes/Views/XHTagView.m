@@ -32,6 +32,8 @@
 @property (nonatomic, assign) XHTagAnimationStyle tagAnimationStyle;
 @property (nonatomic, strong) NSMutableArray *branchPoints;
 
+@property (nonatomic, strong) UIPanGestureRecognizer *panGestureRecognizer;
+
 // C6 3的组合，有4种可能是我们想要的
 
 @end
@@ -62,17 +64,6 @@
     [self addSubview:self.bottomBranchTextView];
     
     [self addSubview:self.centerView];
-    
-    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGestureRecognizer:)];
-    [self addGestureRecognizer:panGestureRecognizer];
-}
-
-- (void)handlePanGestureRecognizer:(UIPanGestureRecognizer *)panGestureRecognizer {
-    CGPoint point = [panGestureRecognizer translationInView:panGestureRecognizer.view];
-    
-    self.center = CGPointMake(self.center.x + point.x, self.center.y + point.y);
-    
-    [panGestureRecognizer setTranslation:CGPointZero inView:panGestureRecognizer.view];
 }
 
 - (void)showInPoint:(CGPoint)point {
@@ -176,7 +167,34 @@
     branchLayer.radius = self.radius;
 }
 
+#pragma mark - Gesture Handles
+
+- (void)handlePanGestureRecognizer:(UIPanGestureRecognizer *)panGestureRecognizer {
+    CGPoint point = [panGestureRecognizer translationInView:panGestureRecognizer.view];
+    
+    self.center = CGPointMake(self.center.x + point.x, self.center.y + point.y);
+    
+    [panGestureRecognizer setTranslation:CGPointZero inView:panGestureRecognizer.view];
+}
+
 #pragma mark - Propertys
+
+- (void)setPanGestureOnTagViewed:(BOOL)panGestureOnTagViewed {
+    _panGestureOnTagViewed = panGestureOnTagViewed;
+    if (panGestureOnTagViewed) {
+        if (![self validatePanGesture]) {
+            [self addGestureRecognizer:self.panGestureRecognizer];
+        }
+    } else {
+        if ([self validatePanGesture]) {
+            [self removeGestureRecognizer:self.panGestureRecognizer];
+        }
+    }
+}
+
+- (BOOL)validatePanGesture {
+    return [self.gestureRecognizers containsObject:self.panGestureRecognizer];
+}
 
 - (XHBranchLayer *)topBranchLayer {
     if (!_topBranchLayer) {
@@ -267,6 +285,13 @@
                                                           direction:XHBranchLayerDirectionRight]];
     }
     return _branchPoints;
+}
+
+- (UIPanGestureRecognizer *)panGestureRecognizer {
+    if (!_panGestureOnTagViewed) {
+        _panGestureOnTagViewed = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGestureRecognizer:)];
+    }
+    return _panGestureRecognizer;
 }
 
 - (NSArray *)initlizerTagAnimationBranchWithTopBranchPoint:(XHBranchPoint *)topBranchPoint

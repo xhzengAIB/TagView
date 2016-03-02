@@ -22,6 +22,11 @@
  */
 @property (nonatomic, assign, readonly) BOOL showing;
 
+/**
+ *  是否支持手势滑动TagView，默认是YES
+ */
+@property (nonatomic, assign) BOOL panGestureOnTagViewed;
+
 - (void)showInPoint:(CGPoint)point;
 - (void)dismiss;
 
