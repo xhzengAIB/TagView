@@ -21,7 +21,16 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
     
-    [self performSelector:@selector(showTagView) withObject:nil afterDelay:0];
+//    [self performSelector:@selector(showTagView) withObject:nil afterDelay:0];
+    
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGestureRecognizer:)];
+    [self.view addGestureRecognizer:tapGestureRecognizer];
+}
+
+- (void)handleTapGestureRecognizer:(UITapGestureRecognizer *)tapGestureRecognizer {
+    CGPoint point = [tapGestureRecognizer locationInView:tapGestureRecognizer.view];
+    
+    [self.tagView showInPoint:point];
 }
 
 - (void)showTagView {
