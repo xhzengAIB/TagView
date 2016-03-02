@@ -27,6 +27,11 @@
  */
 @property (nonatomic, assign) BOOL panGestureOnTagViewed;
 
+/**
+ *  标签分支的文本，总共三个
+ */
+@property (nonatomic, strong) NSArray *branchTexts;
+
 - (void)showInPoint:(CGPoint)point;
 - (void)dismiss;
 

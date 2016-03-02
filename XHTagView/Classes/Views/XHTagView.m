@@ -92,27 +92,27 @@
 - (void)animation {
     switch (self.tagAnimationStyle) {
         case XHTagAnimationStyleAllLeft: {
-            [self setupBranchLayer:self.topBranchLayer branchPoint:self.branchPoints[0]];
+            [self setupBranchLayer:self.topBranchLayer branchPoint:self.branchPoints[2]];
             [self setupBranchLayer:self.midBranchLayer branchPoint:self.branchPoints[1]];
-            [self setupBranchLayer:self.bottomBranchLayer branchPoint:self.branchPoints[2]];
+            [self setupBranchLayer:self.bottomBranchLayer branchPoint:self.branchPoints[0]];
             break;
         }
         case XHTagAnimationStyleAllRight: {
-            [self setupBranchLayer:self.topBranchLayer branchPoint:self.branchPoints[3]];
+            [self setupBranchLayer:self.topBranchLayer branchPoint:self.branchPoints[5]];
             [self setupBranchLayer:self.midBranchLayer branchPoint:self.branchPoints[4]];
-            [self setupBranchLayer:self.bottomBranchLayer branchPoint:self.branchPoints[5]];
+            [self setupBranchLayer:self.bottomBranchLayer branchPoint:self.branchPoints[3]];
             break;
         }
         case XHTagAnimationStyleDoubleLeft: {
-            [self setupBranchLayer:self.topBranchLayer branchPoint:self.branchPoints[0]];
+            [self setupBranchLayer:self.topBranchLayer branchPoint:self.branchPoints[2]];
             [self setupBranchLayer:self.midBranchLayer branchPoint:self.branchPoints[4]];
-            [self setupBranchLayer:self.bottomBranchLayer branchPoint:self.branchPoints[2]];
+            [self setupBranchLayer:self.bottomBranchLayer branchPoint:self.branchPoints[0]];
             break;
         }
         case XHTagAnimationStyleDoubleRight: {
-            [self setupBranchLayer:self.topBranchLayer branchPoint:self.branchPoints[3]];
+            [self setupBranchLayer:self.topBranchLayer branchPoint:self.branchPoints[5]];
             [self setupBranchLayer:self.midBranchLayer branchPoint:self.branchPoints[1]];
-            [self setupBranchLayer:self.bottomBranchLayer branchPoint:self.branchPoints[5]];
+            [self setupBranchLayer:self.bottomBranchLayer branchPoint:self.branchPoints[3]];
             break;
         }
         default:
@@ -126,14 +126,20 @@
     
     __weak typeof(self) weakSelf = self;
     [self.topBranchLayer animationDelay:0.0 completion:^(BOOL finished, XHBranchLayer *branchLayer) {
-        [weakSelf.topBranchTextView showInPoint:branchLayer.endPoint direction:branchLayer.direction];
-        [weakSelf.centerView startAnimation];
+        if (finished) {
+            [weakSelf.topBranchTextView showInPoint:branchLayer.endPoint direction:branchLayer.direction];
+            [weakSelf.centerView startAnimation];
+        }
     }];
     [self.midBranchLayer animationDelay:0.0 completion:^(BOOL finished, XHBranchLayer *branchLayer) {
-        [weakSelf.midBranchTextView showInPoint:branchLayer.endPoint direction:branchLayer.direction];
+        if (finished) {
+            [weakSelf.midBranchTextView showInPoint:branchLayer.endPoint direction:branchLayer.direction];
+        }
     }];
     [self.bottomBranchLayer animationDelay:0.0 completion:^(BOOL finished, XHBranchLayer *branchLayer) {
-        [weakSelf.bottomBranchTextView showInPoint:branchLayer.endPoint direction:branchLayer.direction];
+        if (finished) {
+            [weakSelf.bottomBranchTextView showInPoint:branchLayer.endPoint direction:branchLayer.direction];
+        }
     }];
 }
 
@@ -222,7 +228,6 @@
 - (XHBranchTextView *)topBranchTextView {
     if (!_topBranchTextView) {
         _topBranchTextView = [[XHBranchTextView alloc] initWithFrame:CGRectZero];
-        _topBranchTextView.branchText = @"标签1的文字内容";
     }
     return _topBranchTextView;
 }
@@ -230,7 +235,6 @@
 - (XHBranchTextView *)midBranchTextView {
     if (!_midBranchTextView) {
         _midBranchTextView = [[XHBranchTextView alloc] initWithFrame:CGRectZero];
-        _midBranchTextView.branchText = @"标签2的文字内容";
     }
     return _midBranchTextView;
 }
@@ -238,7 +242,6 @@
 - (XHBranchTextView *)bottomBranchTextView {
     if (!_bottomBranchTextView) {
         _bottomBranchTextView = [[XHBranchTextView alloc] initWithFrame:CGRectZero];
-        _bottomBranchTextView.branchText = @"标签3的文字内容";
     }
     return _bottomBranchTextView;
 }
@@ -286,6 +289,16 @@
                                                           direction:XHBranchLayerDirectionRight]];
     }
     return _branchPoints;
+}
+
+- (void)setBranchTexts:(NSArray *)branchTexts {
+    if (_branchTexts == branchTexts) {
+        return;
+    }
+    _branchTexts = branchTexts;
+    _topBranchTextView.branchText = [self.branchTexts firstObject];
+    _midBranchTextView.branchText = (self.branchTexts.count > 1 ? self.branchTexts[1] : @"");
+    _bottomBranchTextView.branchText = [self.branchTexts lastObject];
 }
 
 - (UIPanGestureRecognizer *)panGestureRecognizer {

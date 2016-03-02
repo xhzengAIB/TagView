@@ -84,21 +84,27 @@
     
     self.completion = completion;
     
-    self.animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    self.animation.delegate = self;
     self.animation.beginTime = CACurrentMediaTime() + delay;
-    self.animation.fromValue = @(0);
-    self.animation.toValue = @(self.toValue);
-    self.animation.duration = self.animationDuration;
-    self.animation.fillMode = kCAFillModeForwards;
-    self.animation.removedOnCompletion = NO;
     [self addAnimation:self.animation forKey:@"strokeEnd"];
     
     [self performSelector:@selector(setFillColor:) withObject:(id)[UIColor colorWithWhite:1.0 alpha:0.5].CGColor afterDelay:delay + self.animationDuration];
 }
 
+- (CABasicAnimation *)animation {
+    if (!_animation) {
+        _animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+        _animation.delegate = self;
+        _animation.fromValue = @(0);
+        _animation.toValue = @(self.toValue);
+        _animation.duration = self.animationDuration;
+        _animation.fillMode = kCAFillModeForwards;
+        _animation.removedOnCompletion = NO;
+    }
+    return _animation;
+}
+
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
-    if (self.completion && anim == self.animation) {
+    if (self.completion) {
         self.completion(flag, self);
     }
 }

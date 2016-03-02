@@ -20,8 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
-    
-//    [self performSelector:@selector(showTagView) withObject:nil afterDelay:0];
+
+    self.tagView.branchTexts = @[@"标签1的文字内容",
+                                 @"标签2的文字内容",
+                                 @"Tag Three Text Content"];
     
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGestureRecognizer:)];
     [self.view addGestureRecognizer:tapGestureRecognizer];
