@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <XHTagView.h>
+#import <XHTagView/XHTagView.h>
 
 @interface ViewController ()
 
