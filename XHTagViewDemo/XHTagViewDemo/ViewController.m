@@ -17,13 +17,16 @@
 
 @implementation ViewController
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor lightGrayColor];
-
-    self.tagView.branchTexts = @[@"标签1的文字内容",
-                                 @"标签2的文字内容",
-                                 @"Tag Three Text Content"];
+    
+    self.tagView.branchTexts = @[@"我在吃广州美食",
+                                 @"天猫可以买",
+                                 @"Link: https://www...."];
     
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGestureRecognizer:)];
     [self.view addGestureRecognizer:tapGestureRecognizer];

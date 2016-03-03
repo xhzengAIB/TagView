@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -17,6 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Eat" translatesAutoresizingMaskIntoConstraints="NO" id="A1M-tT-b99">
+                                <rect key="frame" x="221" y="181" width="158" height="237"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="237" id="6mz-lw-bRI"/>
+                                    <constraint firstAttribute="width" constant="158" id="BEU-7I-9K6"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVt-hg-Pu4" customClass="XHTagView">
                                 <rect key="frame" x="200" y="200" width="200" height="200"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -26,9 +33,11 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.3411764705882353" green="0.48627450980392156" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="BVt-hg-Pu4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Y8L-3p-7PH"/>
+                            <constraint firstItem="A1M-tT-b99" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eJU-3K-EfH"/>
+                            <constraint firstItem="A1M-tT-b99" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lFp-rq-b6J"/>
                             <constraint firstItem="BVt-hg-Pu4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pv5-Jh-HGH"/>
                         </constraints>
                     </view>
@@ -38,6 +47,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="325" y="362"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Eat" width="158" height="237"/>
+    </resources>
 </document>
