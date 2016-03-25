@@ -1,5 +1,7 @@
 # TagView
 
+Blog describes how to design this effect. [Blog](http://zengxianhua.com)
+
 ![image](https://github.com/xhzengAIB/LearnEnglish/raw/master/Screenshots/XHTagView.gif)
 
 High efficiency Tag components.
@@ -19,6 +21,8 @@ This library requires `iOS 6.0+` and `Xcode 7.0+`.
 XHTagView is provided under the MIT license. See LICENSE file for details.
 
 # 中文介绍
+
+博客中描述了如何设计这个效果. [Blog](http://zengxianhua.com)
 
 高效标签组件。
 
